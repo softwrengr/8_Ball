@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280sp"
+    android:layout_height="280sp"
+    android:layout_marginStart="@dimen/screen_padding"
+    android:layout_marginEnd="@dimen/screen_padding"
+    android:background="@drawable/dialog_view"
+    android:orientation="vertical">
+
+
+    <com.github.zagum.speechrecognitionview.RecognitionProgressView
+        android:id="@+id/recognition_view"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp" />
+
+    <ImageView
+        android:id="@+id/iv_speech_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:src="@drawable/microphone" />
+</LinearLayout>

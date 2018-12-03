@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">8Ball</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="ask_me">ask me</string>
+    <string name="ask_me_your_question">ask me your questio</string>
+
+
+    <!-- Answers -->
+    <string name="yes">YES</string>
+    <string name="no">Mmm..NO</string>
+    <string name="go_for_it">Go for it</string>
+    <string name="dont_even_think">Dont even think about it</string>
+    <string name="just_do_that">Just do that</string>
+    <string name="of_course">of course yes</string>
+    <string name="cant_help">Can not help you with this one</string>
+    <string name="definately_yes">definitely yes</string>
+    <string name="man_up">man up and do it</string>
+    <string name="you_got_me">you got me lost right there</string>
+    <string name="are_you_nuts">Are you nuts</string>
+    <string name="you_better">you better</string>
+    <string name="intro">I am a magic ball</string>
+
+
+    <!-- 8Ball Questions -->
+    <string name="shoot_me">shoot me with your wonders</string>
+    <string name="what_do_you_want">what do you want to know</string>
+    <string name="what_are_you_so_hesitant">what are you so hesitant about</string>
+    <string name="what_are_you_up_to">what are you up to</string>
+    <string name="seems_like_you_heading">seems like you heading for something</string>
+
+
+    <array name="random_question_array">
+
+        <item>shoot me with your wonders</item>
+        <item>what do you want to know</item>
+        <item>what are you so hesitant about</item>
+        <item>what are you up to</item>
+        <item>confess your sins lol</item>
+        <item>seems like you heading for something</item>
+    </array>
+
+
+    <array name="random_answer_array">
+
+        <item>YES</item>
+        <item>NO</item>
+        <item>Go for it</item>
+        <item>Dont even think about it</item>
+        <item>Just do that</item>
+        <item>of course yes</item>
+        <item>Can not help you with this one</item>
+        <item>definitely yes</item>
+        <item>man up and do it</item>
+        <item>you got me lost right there</item>
+        <item>Are you nuts</item>
+        <item>you better</item>
+    </array>
+
+
+    <!-- user Questions -->
+    <string name="how_are_you">how are you</string>
+    <string name="should_i_take_dinner"> should we go out for dinner</string>
+    <string name="should_i_go_to_school">should I go to school</string>
+    <string name="violate">should i violates the rule</string>
+    <string name="should_project">should i take on this new project</string>
+    <string name="new_job">shall I take the new job</string>
+    <string name="quite_job">shall I quite my job</string>
+    <string name="travel">should we travel</string>
+    <string name="my_master">should I do my master</string>
+    <string name="suicide">suicide</string>
+    <string name="who">who are you</string>
+
+
+</resources>
