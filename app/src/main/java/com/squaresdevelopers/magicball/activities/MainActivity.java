@@ -71,13 +71,12 @@ public class MainActivity extends AppCompatActivity {
         mAdView.loadAd(adRequest);
 
 
-
         speechRecognizer = SpeechRecognizer.createSpeechRecognizer(MainActivity.this);
         ivCircle = findViewById(R.id.circle_image);
         ivSpeech = findViewById(R.id.iv_speech);
         tvMagicBallRelpy = findViewById(R.id.magicaball_Answer);
 
-         initializeTextToSpeach();
+        initializeTextToSpeach();
 
         GeneralUtils.permission(this);
         mediaPlayer = MediaPlayer.create(this, R.raw.mysterious_sound);
@@ -95,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         if (aBooleanSpeech) {
                             speechDialog.dismiss();
+                            showRandomlyQuestions();
                         }
                     }
                 }, 12000);
@@ -103,8 +103,11 @@ public class MainActivity extends AppCompatActivity {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            speechDialog.dismiss();
-                            showRandomlyAnswer();
+                            if (aBooleanSpeech) {
+                                speechDialog.dismiss();
+                                showRandomlyQuestions();
+                            }
+
 
                         }
                     }, 4000);
@@ -254,6 +257,7 @@ public class MainActivity extends AppCompatActivity {
         stopService(intent);
 
         randomText = false;
+
     }
 
 
@@ -311,53 +315,44 @@ public class MainActivity extends AppCompatActivity {
             tvMagicBallRelpy.setText(getResources().getString(R.string.definately_yes));
             speak(getResources().getString(R.string.definately_yes));
 
-        }
-        else {
+        } else {
             Toast.makeText(this, strUserVoice, Toast.LENGTH_SHORT).show();
             if (strUserVoice.contains("suicide")) {
                 tvMagicBallRelpy.setVisibility(View.VISIBLE);
                 tvMagicBallRelpy.setText(getResources().getString(R.string.no));
                 speak(getResources().getString(R.string.no));
 
-            }
-            else if (strUserVoice.contains("hurt") || strUserVoice.contains("heart")) {
+            } else if (strUserVoice.contains("hurt") || strUserVoice.contains("heart")) {
                 tvMagicBallRelpy.setVisibility(View.VISIBLE);
                 tvMagicBallRelpy.setText(getResources().getString(R.string.no));
                 speak(getResources().getString(R.string.no));
 
-            }
-            else if (strUserVoice.contains("stab")) {
+            } else if (strUserVoice.contains("stab")) {
                 tvMagicBallRelpy.setVisibility(View.VISIBLE);
                 tvMagicBallRelpy.setText(getResources().getString(R.string.no));
                 speak(getResources().getString(R.string.no));
 
-            }
-            else if (strUserVoice.contains("shoot")) {
+            } else if (strUserVoice.contains("shoot")) {
                 tvMagicBallRelpy.setVisibility(View.VISIBLE);
                 tvMagicBallRelpy.setText(getResources().getString(R.string.no));
                 speak(getResources().getString(R.string.no));
 
-            }
-            else if (strUserVoice.contains("drawn")) {
+            } else if (strUserVoice.contains("drawn")) {
                 tvMagicBallRelpy.setVisibility(View.VISIBLE);
                 tvMagicBallRelpy.setText(getResources().getString(R.string.no));
                 speak(getResources().getString(R.string.no));
 
-            }
-            else if (strUserVoice.contains("hang")) {
+            } else if (strUserVoice.contains("hang")) {
                 tvMagicBallRelpy.setVisibility(View.VISIBLE);
                 tvMagicBallRelpy.setText(getResources().getString(R.string.no));
                 speak(getResources().getString(R.string.no));
 
-            }
-            else if (strUserVoice.contains("jump")) {
+            } else if (strUserVoice.contains("jump")) {
                 tvMagicBallRelpy.setVisibility(View.VISIBLE);
                 tvMagicBallRelpy.setText(getResources().getString(R.string.no));
                 speak(getResources().getString(R.string.no));
 
-            }
-
-            else {
+            } else {
                 showRandomlyAnswer();
             }
 
