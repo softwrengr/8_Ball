@@ -212,7 +212,6 @@ public class MainActivity extends AppCompatActivity {
 
         String strSpeech = matches.get(0);
 
-        Toast.makeText(this, strSpeech, Toast.LENGTH_SHORT).show();
 
         if (strSpeech.contains("suicide")) {
             GeneralUtils.watchYoutubeVideo(MainActivity.this, "sRo5Db_7yVI");
