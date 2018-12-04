@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                         }
-                    }, 4000);
+                    }, 10000);
                 }
 
             }
@@ -352,7 +352,16 @@ public class MainActivity extends AppCompatActivity {
                 tvMagicBallRelpy.setText(getResources().getString(R.string.no));
                 speak(getResources().getString(R.string.no));
 
-            } else {
+            }
+
+            else if (strUserVoice.contains("kill")) {
+                tvMagicBallRelpy.setVisibility(View.VISIBLE);
+                tvMagicBallRelpy.setText(getResources().getString(R.string.no));
+                speak(getResources().getString(R.string.no));
+
+            }
+
+            else {
                 showRandomlyAnswer();
             }
 

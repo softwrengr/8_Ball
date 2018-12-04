@@ -10,7 +10,7 @@
 
     <!-- Answers -->
     <string name="yes">YES</string>
-    <string name="no">Mmm..NO</string>
+    <string name="no">No</string>
     <string name="go_for_it">Go for it</string>
     <string name="dont_even_think">Dont even think about it</string>
     <string name="just_do_that">Just do that</string>
