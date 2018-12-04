@@ -11,7 +11,7 @@
     android:gravity="center"
     android:background="@drawable/background"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    tools:context="com.squaresdevelopers.magicball.activities.MainActivity">
+    tools:context="com.junglesoft.magicball.activities.MainActivity">
 
 
     <TextView

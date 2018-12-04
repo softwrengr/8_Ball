@@ -1,4 +1,4 @@
-package com.squaresdevelopers.magicball.shake;
+package com.junglesoft.magicball.shake;
 
 import android.app.Service;
 import android.content.Context;
@@ -9,10 +9,8 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Handler;
 import android.os.IBinder;
-import android.widget.Toast;
 
-import com.squaresdevelopers.magicball.activities.MainActivity;
-import com.squaresdevelopers.magicball.utilities.GeneralUtils;
+import com.junglesoft.magicball.utilities.GeneralUtils;
 
 public class ShakeService extends Service implements SensorEventListener {
 

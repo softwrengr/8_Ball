@@ -1,10 +1,8 @@
-package com.squaresdevelopers.magicball.activities;
+package com.junglesoft.magicball.activities;
 
 import android.Manifest;
 import android.animation.ObjectAnimator;
 import android.app.Dialog;
-import android.content.ActivityNotFoundException;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -31,14 +29,12 @@ import com.github.zagum.speechrecognitionview.adapters.RecognitionListenerAdapte
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.squaresdevelopers.magicball.R;
-import com.squaresdevelopers.magicball.shake.ShakeService;
-import com.squaresdevelopers.magicball.utilities.GeneralUtils;
-import com.squaresdevelopers.magicball.utilities.NetworkUtils;
+import com.junglesoft.magicball.R;
+import com.junglesoft.magicball.shake.ShakeService;
+import com.junglesoft.magicball.utilities.GeneralUtils;
+import com.junglesoft.magicball.utilities.NetworkUtils;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Locale;
 import java.util.Random;
 

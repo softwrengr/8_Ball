@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/fragment_container"
     android:background="#000"
-    tools:context="com.squaresdevelopers.magicball.activities.MainActivity">
+    tools:context="com.junglesoft.magicball.activities.MainActivity">
 
 
     <RelativeLayout
