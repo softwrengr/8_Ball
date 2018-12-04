@@ -23,9 +23,15 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
 
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id"/>
+
+        <activity android:name=".activities.MainActivity">
         </activity>
+
 
         <service
             android:name=".shake.ShakeService"

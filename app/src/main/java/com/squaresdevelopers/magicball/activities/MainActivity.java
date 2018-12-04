@@ -30,6 +30,7 @@ import com.github.zagum.speechrecognitionview.RecognitionProgressView;
 import com.github.zagum.speechrecognitionview.adapters.RecognitionListenerAdapter;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.squaresdevelopers.magicball.R;
 import com.squaresdevelopers.magicball.shake.ShakeService;
 import com.squaresdevelopers.magicball.utilities.GeneralUtils;
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        MobileAds.initialize(this, getResources().getString(R.string.app_id));
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
