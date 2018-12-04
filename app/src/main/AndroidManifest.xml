@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.squaresdevelopers.magicball">
+    package="com.junglesoft.magicball">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -23,17 +23,22 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
 
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id"/>
+
+        <activity android:name="com.junglesoft.magicball.activities.MainActivity">
         </activity>
 
+
         <service
-            android:name=".shake.ShakeService"
+            android:name="com.junglesoft.magicball.shake.ShakeService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".activities.SplashScreen"
-            android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name="com.junglesoft.magicball.activities.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

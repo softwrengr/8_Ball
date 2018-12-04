@@ -2,6 +2,7 @@
     <string name="app_name">8Ball</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="app_id">ca-app-pub-8928963743077612~3428588901</string>
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 
     <string name="ask_me">ask me</string>

@@ -1,21 +1,16 @@
-package com.squaresdevelopers.magicball.activities;
+package com.junglesoft.magicball.activities;
 
 import android.animation.ObjectAnimator;
 import android.content.Intent;
-import android.opengl.GLSurfaceView;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.BounceInterpolator;
-import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squaresdevelopers.magicball.R;
+import com.junglesoft.magicball.R;
 
 public class SplashScreen extends AppCompatActivity {
 

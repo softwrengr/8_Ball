@@ -4,7 +4,7 @@ apply plugin: 'com.google.gms.google-services'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.squaresdevelopers.magicball"
+        applicationId "com.junglesoft.magicball"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
@@ -30,11 +30,13 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 
 
-
     implementation 'com.github.zagum:SpeechRecognitionView:1.2.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation 'com.google.firebase:firebase-ads:12.0.0'
-    implementation 'com.google.android.gms:play-services-ads:12.0.0'
+    implementation 'com.google.firebase:firebase-ads:17.0.0'
+    implementation 'com.google.android.gms:play-services-ads:17.0.0'
 }
+
+
+apply plugin: 'com.google.gms.google-services'

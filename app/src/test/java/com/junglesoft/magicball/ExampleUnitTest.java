@@ -1,4 +1,4 @@
-package com.squaresdevelopers.magicball;
+package com.junglesoft.magicball;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.squaresdevelopers.magicball;
+package com.junglesoft.magicball;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

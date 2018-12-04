@@ -1,4 +1,4 @@
-package com.squaresdevelopers.magicball.utilities;
+package com.junglesoft.magicball.utilities;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

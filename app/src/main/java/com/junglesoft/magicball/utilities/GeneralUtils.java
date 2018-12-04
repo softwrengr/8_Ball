@@ -1,4 +1,4 @@
-package com.squaresdevelopers.magicball.utilities;
+package com.junglesoft.magicball.utilities;
 
 import android.Manifest;
 import android.animation.AnimatorInflater;
@@ -21,8 +21,7 @@ import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
-import com.squaresdevelopers.magicball.R;
-import com.squaresdevelopers.magicball.activities.MainActivity;
+import com.junglesoft.magicball.R;
 
 import java.util.List;
 

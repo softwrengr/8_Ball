@@ -1,4 +1,4 @@
-package com.squaresdevelopers.magicball.utilities;
+package com.junglesoft.magicball.utilities;
 
 /**
  * Created by eapple on 21/11/2018.
