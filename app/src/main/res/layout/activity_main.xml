@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,30 +7,28 @@
     android:layout_height="match_parent"
     android:id="@+id/fragment_container"
     android:orientation="vertical"
-    android:layout_gravity="center"
-    android:gravity="center"
     android:background="@drawable/background"
     tools:context="com.squaresdevelopers.magicball.activities.MainActivity">
 
 
-    <TextView
-        android:id="@+id/textview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:layout_alignParentLeft="true" />
+    <!--<TextView-->
+        <!--android:id="@+id/textview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/app_name"-->
+        <!--android:layout_alignParentLeft="true" />-->
 
     <RelativeLayout
         android:layout_width="350sp"
-        android:layout_height="300sp"
-        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true">
 
 
         <RelativeLayout
+            android:id="@+id/ball_layout"
             android:layout_width="300sp"
             android:layout_height="300sp"
             android:layout_alignParentTop="true"
@@ -67,45 +65,42 @@
 
         </RelativeLayout>
 
+        <LinearLayout
+            android:id="@+id/mic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_below="@id/ball_layout"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="tap_on_mic"
+                android:textColor="@color/whtie"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+
+            <ImageView
+                android:id="@+id/iv_speech"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="23dp"
+                android:src="@drawable/microphone" />
+        </LinearLayout>
+
+
     </RelativeLayout>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:orientation="vertical">
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="tap_on_mic"
-            android:textColor="@color/colorPrimary"
-            android:textSize="15dp"
-            android:textStyle="normal" />
-
-
-        <ImageView
-            android:id="@+id/iv_speech"
-            android:layout_width="wrap_content"
-            android:layout_height="50sp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="23dp"
-            android:src="@drawable/microphone" />
-    </LinearLayout>
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true">
 
         <com.google.android.gms.ads.AdView
             xmlns:ads="http://schemas.android.com/apk/res-auto"
@@ -114,14 +109,10 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
+            android:layout_marginTop="10sp"
             ads:adSize="BANNER"
             ads:adUnitId="@string/banner_ad_unit_id">
         </com.google.android.gms.ads.AdView>
 
 
-    </RelativeLayout>
-
-
-
-
-</LinearLayout>
+</RelativeLayout>
