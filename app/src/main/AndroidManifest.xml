@@ -23,28 +23,25 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/app_id"/>
+            android:value="@string/app_id" />
 
-        <activity android:name="com.junglesoft.magicball.activities.MainActivity">
-        </activity>
-
+        <activity android:name=".activities.MainActivity"></activity>
 
         <service
-            android:name="com.junglesoft.magicball.shake.ShakeService"
+            android:name=".shake.ShakeService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name="com.junglesoft.magicball.activities.SplashScreen">
+        <activity android:name=".activities.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.SettingActivity"></activity>
     </application>
 
 </manifest>

@@ -16,6 +16,10 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.animation.Animation;
@@ -314,7 +318,7 @@ public class MainActivity extends AppCompatActivity {
             speak(getResources().getString(R.string.definately_yes));
 
         } else {
-            Toast.makeText(this, strUserVoice, Toast.LENGTH_SHORT).show();
+
             if (strUserVoice.contains("suicide")) {
                 tvMagicBallRelpy.setVisibility(View.VISIBLE);
                 tvMagicBallRelpy.setText(getResources().getString(R.string.no));
@@ -350,16 +354,12 @@ public class MainActivity extends AppCompatActivity {
                 tvMagicBallRelpy.setText(getResources().getString(R.string.no));
                 speak(getResources().getString(R.string.no));
 
-            }
-
-            else if (strUserVoice.contains("kill")) {
+            } else if (strUserVoice.contains("kill")) {
                 tvMagicBallRelpy.setVisibility(View.VISIBLE);
                 tvMagicBallRelpy.setText(getResources().getString(R.string.no));
                 speak(getResources().getString(R.string.no));
 
-            }
-
-            else {
+            } else {
                 showRandomlyAnswer();
             }
 
@@ -415,5 +415,26 @@ public class MainActivity extends AppCompatActivity {
 
         tvMagicBallRelpy.setText(randomString);
         speak(randomString);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.setting:
+                  startActivity(new Intent(MainActivity.this,SettingActivity.class));
+                break;
+            default:
+                Log.d("error", "you got some error");
+                break;
+        }
+
+        return false;
     }
 }

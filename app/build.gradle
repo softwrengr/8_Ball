@@ -7,8 +7,8 @@ android {
         applicationId "com.junglesoft.magicball"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -34,9 +34,13 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
+    //noinspection GradleCompatible
     implementation 'com.google.firebase:firebase-ads:17.0.0'
     implementation 'com.google.android.gms:play-services-ads:17.0.0'
 }
 
 
 apply plugin: 'com.google.gms.google-services'
+
+//key and password = eightball00
+// developer email = softwrengr@gmail.com
